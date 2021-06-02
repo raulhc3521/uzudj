@@ -1,0 +1,88 @@
+h1, h2, h3, h4, h5, p, a, button, input, textarea, li, figcaption {
+    font-family: $open-sans;
+    color: $dark;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: 3px;
+}
+
+a, button {
+    /*font-weight: $bold;
+    font-size: $a-size;
+    text-decoration: underline;
+    color: $cyan;*/
+}
+
+h1, h2, h3, h4, h5, p {
+    //font-weight: $regular;
+}
+
+h1 {
+    font-size: $h1-size;
+    padding-bottom: 15px;
+    line-height: 40px;
+}
+h2 {
+    font-size: $h2-size;
+    line-height: 30px;
+}
+h3 {
+    font-size: $h3-size;
+    font-weight: $semi-bold;
+    line-height: 28px;
+}
+h4 {
+    font-size: $h4-size;
+    line-height: 22px;
+}
+h5 {
+    font-size: $h5-size;
+    line-height: 22px;
+    
+}
+p {
+    font-size: $p-size;
+    line-height: 20px;
+    padding: 3px 0;
+}
+li{
+    font-size: $p-size;
+    line-height: 18px;
+    list-style-type: disc
+}
+ol{
+    padding: 0 0 20px 30px;
+    margin: 0;
+}
+figcaption {
+    font-size: $p-size;
+    line-height: 18px;
+    color: $light-gray;
+    font-weight: $light;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+br{
+      line-height: 20px;  
+}
+
+.bold {
+    font-weight: $bold;
+    color: $dark;
+}
+.text-center {
+    text-align: center;
+}
+.text-turq {
+    color: $cyan;
+}
+.text-viol {
+    color: $magenta;
+}
+
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active, input:-webkit-autofill::first-line {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    font-family: $open-sans;
+}
