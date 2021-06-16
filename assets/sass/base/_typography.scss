@@ -20,35 +20,34 @@ h1, h2, h3, h4, h5, p {
 
 h1 {
     font-size: $h1-size;
-    padding-bottom: 15px;
-    line-height: 40px;
+    line-height: 30px;
 }
 h2 {
     font-size: $h2-size;
-    line-height: 30px;
+    line-height: 24px;
 }
 h3 {
     font-size: $h3-size;
     font-weight: $semi-bold;
-    line-height: 28px;
+    line-height: 20px;
 }
 h4 {
     font-size: $h4-size;
-    line-height: 22px;
+    line-height: 18px;
 }
 h5 {
     font-size: $h5-size;
-    line-height: 22px;
+    line-height: 16px;
     
 }
 p {
     font-size: $p-size;
-    line-height: 20px;
+    line-height: 18px;
     padding: 3px 0;
 }
 li{
-    font-size: $p-size;
-    line-height: 18px;
+    font-size: $li-size;
+    line-height: 14px;
     list-style-type: disc
 }
 ol{
@@ -65,6 +64,12 @@ figcaption {
 }
 br{
       line-height: 20px;  
+}
+
+button {
+    font-size: $h4-size;
+    font-weight: $bold;
+    color: $white;
 }
 
 .bold {

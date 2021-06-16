@@ -1,4 +1,15 @@
-html {
-    scroll-behavior: smooth;
-    transition: all 5s ease-in-out;
+//header
+
+header {
+    text-align: center;
+    
+    h3 {
+        max-width: 500px;
+        margin: 80px auto 0;
+    }
+    img {
+        max-width: 60%;
+        margin-bottom: 200px;
+    }
 }
+

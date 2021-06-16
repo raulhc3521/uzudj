@@ -1,0 +1,47 @@
+.caracteristicas {
+    .row {
+        grid-row-gap: 0px !important;
+
+    }
+    .caract_img, .caract_text {
+        height: 500px;
+        width: 100%;
+    } 
+
+    .caract_img {
+        background-color: $gray;
+        img {
+            height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+    .caract_text {
+        background-color: $dark;
+        p {
+            color: $white;
+            max-width: 500px;
+            height: 300px;
+            margin: 100px;
+            text-align: justify;
+        }
+    }
+    .caract_keys {
+        height: 300px;
+        text-align: center;
+        p {
+            margin: 140px 20%;
+        }
+    }
+    .caract_gen_txt {
+        margin: 200px 10% 200px 0; 
+        ul {
+            margin-left: 20px;
+        }
+    }
+    .caract_gen_img {
+        margin: 200px 0 0 0;
+        float: right;
+        width: 180%;
+    }
+}

@@ -1,4 +1,16 @@
 // footer
-.footer img {
-    width: 300px;
+.footer {
+    background-color: $light-gray;
+    height: 200px;
+    .footer_txt {
+        padding: 70px;
+        p {
+            color: $dark;
+            text-align: justify;
+        }
+    }
+    img {
+        padding: 40px 0;
+        width: 300px;
+    }
 }
