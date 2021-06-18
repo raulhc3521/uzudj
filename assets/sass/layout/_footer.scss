@@ -1,7 +1,7 @@
 // footer
 .footer {
     background-color: $light-gray;
-    height: 200px;
+    height: 220px;
     .footer_txt {
         padding: 70px;
         p {
@@ -10,7 +10,10 @@
         }
     }
     img {
-        padding: 40px 0;
+        padding: 40px 0 20px 0;
         width: 300px;
+    }
+    h5 {
+        text-align: center;
     }
 }

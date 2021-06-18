@@ -7,11 +7,13 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 3px;
 }
 
-a, button {
-    /*font-weight: $bold;
+a {
     font-size: $a-size;
-    text-decoration: underline;
-    color: $cyan;*/
+    color: $light-teal;
+    text-decoration: none;
+    &:hover {
+        color: $cyan;
+    }
 }
 
 h1, h2, h3, h4, h5, p {
@@ -20,7 +22,7 @@ h1, h2, h3, h4, h5, p {
 
 h1 {
     font-size: $h1-size;
-    line-height: 30px;
+    line-height: 40px;
 }
 h2 {
     font-size: $h2-size;
@@ -28,7 +30,7 @@ h2 {
 }
 h3 {
     font-size: $h3-size;
-    font-weight: $semi-bold;
+    font-weight: $regular;
     line-height: 20px;
 }
 h4 {
