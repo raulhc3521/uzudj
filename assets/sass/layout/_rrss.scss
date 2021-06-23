@@ -1,17 +1,37 @@
 // RRSS
 
 .rrss {
-    margin: 0 25% 200px 25%;
-    a:hover {
-        color: $cyan;
+    .rrss_box {
+        height: 100px;
     }
-    h3:hover {
-        color: $cyan;
+    margin: 150px 25% 200px 25%;
+    a:hover {        
+        h3 {
+            color: $light-teal;
+            transition: all 0.1s ease-in-out;
+        }
+        svg {
+            fill: $light-teal;
+            transition: all 0.1s ease-in-out;
+        }
+        .rrss_img {
+            width: 70px;
+            height: 70px;
+            transition: all 0.1s ease-in-out;
+        }
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        fill: $teal;
+        transition: all 0.1s ease-in-out;
     }
     .rrss_img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         margin: 0 auto;
+        transition: all 0.1s ease-in-out;
     }
     img {
         color: $dark;
@@ -21,7 +41,8 @@
     h3 {
         font-weight: $semi-bold;
         color: $teal;
-        margin: 10px;
+        margin: 5px;
         text-align: center;
+        transition: all 0.1s ease-in-out;
     }
 }

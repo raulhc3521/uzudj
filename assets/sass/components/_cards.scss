@@ -1,5 +1,7 @@
 //Cards
-
+.card_container {
+    height: 400px;
+}
 .card:hover {
     box-shadow: 0 5px 10px 0 $gray;
     transition: all 0.3s ease-in-out;

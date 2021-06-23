@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5 {
 
 a {
   font-size: 14px;
-  color: #73caca;
+  color: #447878;
   text-decoration: none;
 }
 a:hover {
@@ -588,6 +588,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   transition: all 0.3s ease-in-out;
 }
 
+.card_container {
+  height: 400px;
+}
+
 .card:hover {
   box-shadow: 0 5px 10px 0 #C0BFBF;
   transition: all 0.3s ease-in-out;
@@ -686,19 +690,28 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 ::-webkit-scrollbar-thumb:hover {
   background-color: $dark; 
 }*/
+@media only screen and (min-width: 1200px) {
+  .logo {
+    width: 300px !important;
+  }
+}
 .navbar {
   z-index: 10;
   position: fixed;
   top: 0;
   width: 100%;
   color: #262626;
-  background-color: #E9E9E9;
+  transition: all 0.2s ease-in-out;
+}
+.navbar .logo {
+  width: 220px;
+  height: 250px;
+  transition: all 0.3s ease-in-out;
 }
 .navbar img {
-  width: 300px;
-  height: 50px;
   object-fit: fill;
   margin: 0 auto;
+  transition: all 0.1s ease-in-out;
 }
 .navbar .col-2 {
   margin: 15px 0;
@@ -712,12 +725,24 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #73caca;
 }
 
+.logo_scroll {
+  height: 50px !important;
+  width: 100px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar_scroll {
+  background-color: #E9E9E9;
+  transition: all 0.2s ease-in-out;
+}
+
 header {
   text-align: center;
 }
 header h3 {
   max-width: 500px;
-  margin: 80px auto 0;
+  margin: 0 auto;
+  padding-top: 250px;
 }
 header img {
   max-width: 60%;
@@ -731,7 +756,7 @@ html {
 
 .footer {
   background-color: #E9E9E9;
-  height: 220px;
+  height: 100%;
 }
 .footer .footer_txt {
   padding: 70px;
@@ -748,6 +773,9 @@ html {
   text-align: center;
 }
 
+.caracteristicas .caract_img_key {
+  width: 100%;
+}
 .caracteristicas .row {
   grid-row-gap: 0px !important;
 }
@@ -793,7 +821,7 @@ html {
 }
 
 .precios {
-  height: 600px;
+  height: 100%;
   padding: 100px 0;
 }
 .precios p {
@@ -806,18 +834,36 @@ html {
 }
 
 .rrss {
-  margin: 0 25% 200px 25%;
+  margin: 150px 25% 200px 25%;
 }
-.rrss a:hover {
-  color: #09f0f0;
+.rrss .rrss_box {
+  height: 100px;
 }
-.rrss h3:hover {
-  color: #09f0f0;
+.rrss a:hover h3 {
+  color: #73caca;
+  transition: all 0.1s ease-in-out;
+}
+.rrss a:hover svg {
+  fill: #73caca;
+  transition: all 0.1s ease-in-out;
+}
+.rrss a:hover .rrss_img {
+  width: 70px;
+  height: 70px;
+  transition: all 0.1s ease-in-out;
+}
+.rrss svg {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  fill: #447878;
+  transition: all 0.1s ease-in-out;
 }
 .rrss .rrss_img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
+  transition: all 0.1s ease-in-out;
 }
 .rrss img {
   color: #262626;
@@ -827,13 +873,15 @@ html {
 .rrss h3 {
   font-weight: 600;
   color: #447878;
-  margin: 10px;
+  margin: 5px;
   text-align: center;
+  transition: all 0.1s ease-in-out;
 }
 
 .contactanos h1 {
   text-align: center;
   margin: 100px 20%;
+  color: #262626;
 }
 .contactanos a {
   font-size: 32px;
