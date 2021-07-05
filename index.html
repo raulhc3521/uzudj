@@ -19,17 +19,37 @@
     <nav class="navbar">
         <div class="container">
             <div class="row">
+
+                <div class="col-1 d-none-md"></div>
                 <div class="col-2 d-none d-block-md"><a href="#caracteristicas">Características</a></div>
                 <div class="col-2 d-none d-block-md"><a href="#precios">Precios</a></div>
-                <div class="col-12 col-sm-4"><a href="#home"><img class="logo" src="assets/img/uzudj.svg" alt=""></a></div>
+
+                <div class="col-10 col-sm-4">
+                    <a href="#home" onclick="uncheck()">
+                        <img class="logo" src="assets/img/uzudj.svg" alt="">
+                    </a>
+                </div>
+                
                 <div class="col-2 d-none d-block-md"><a href="#contactanos">Contactanos</a></div>
                 <div class="col-2 d-none d-block-md"><a href="#rrss">Redes Sociales</a></div>
+                <label class="col-1 d-none-md" for="burger"><h3 class="burger_lines">|||</h3></label>
+                <input class="d-none" type="checkbox" id="burger">
+
+                <div class="col-12 colapse d-none-md">
+                    <ul>
+                        <li><a onclick="uncheck()" href="#caracteristicas">Características</a></li>
+                        <li><a onclick="uncheck()" href="#precios">Precios</a></li>
+                        <li><a onclick="uncheck()" href="#contactanos">Contactanos</a></li>
+                        <li><a onclick="uncheck()" href="#rrss">Redes Sociales</a></li>
+                    </ul>   
+                </div>
+
             </div>
         </div>
     </nav>
 
     <header class="Header" id="home">
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quidem facere beatae corporis sed neque nesciunt obcaecati ipsum consequuntur dolore, non, nam error deleniti! Pariatur ab dignissimos dolore excepturi quaerat.</h3>
+        <h3>Es un Gamepad de código abierto para videojuegos rítmicos simuladores de Dj, es compatible con Windows y con la mayoría de los videojuegos rítmicos para PC.</h3>
         <img src="assets/img/uzudj_header.png" alt="uzudj gamepad render">
     </header>
     <div class="caracteristicas" id="caracteristicas">
@@ -40,11 +60,11 @@
                 </div>
 
                 <div class="caract_text col-12 col-sm-6">
-                    <p class="fl_l">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam harum necessitatibus libero quibusdam nobis odio sunt quis in quas qui? Repellendus reiciendis dolore, ullam libero dignissimos aspernatur quo alias magni?</p>
+                    <p class="fl_l">Posee una gran robustez gracias a su carcasa fabricada en acero electropintada para brindar mayor firmeza y resistencia ante ralladuras, y para mayor seguridad, las botoneras también poseen de fondo placas de acero, dando mayor resistencia a las partes que mayor impacto reciben.</p>
                 </div>
 
                 <div class="caract_text col-12 col-sm-6">
-                    <p class="fl_r">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam harum necessitatibus libero quibusdam nobis odio sunt quis in quas qui? Repellendus reiciendis dolore, ullam libero dignissimos aspernatur quo alias magni?</p>
+                    <p class="fl_r">Iluminación RGB en sus tornamesas, con 2 colores que se mueven en dirección del movimiento del disco, los colores se pueden cambiar presionando los botones FN + Key8/9/10/11 o si sabes algo de programación, puedes modificar el código y cargar efectos de iluminación personalizados.</p>
                 </div>
 
                 <div class="caract_img col-12 col-sm-6">
@@ -56,15 +76,22 @@
                 </div>
 
                 <div class="caract_text col-12 col-sm-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam harum necessitatibus libero quibusdam nobis odio sunt quis in quas qui? Repellendus reiciendis dolore, ullam libero dignissimos aspernatur quo alias magni?</p>
+                    <p>Botones 11 IST estilo Samduck y 2 Encoder rotatorios de 400ppr para lograr mayor calidad, sensibilidad y una sensación lo más cercana posible a lo árcade. Y si te preocupan la cantidad de botones, presionando el botón “FN” cambias la función de todos los botones, accediendo a botones configurables para los menús o cambiar la iluminación el pad.</p>
                 </div>
 
                 <div class="caract_text col-12 col-sm-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam harum necessitatibus libero quibusdam nobis odio sunt quis in quas qui? Repellendus reiciendis dolore, ullam libero dignissimos aspernatur quo alias magni?</p>
+                    <p>Microswitch de calidad y baja fuerza de presión, dando la posibilidad de escoger entre Omron de 25gf, Gersung de 50gf y Cherry de 75gf, esto en combinación de resortes de 30 o 60gf, genera una correcta respuesta y rapidez en los botones. Y si te preocupa el ruido de los botones, también se incluyen silenciadores que disminuyen el ruido.</p>
                 </div>
 
                 <div class="caract_img col-12 col-sm-6">
                     <img src="assets/img/uzudj_header.png" alt="">
+                </div>
+
+                <div class="caract_img col-12 col-sm-6">
+                    <img src="assets/img/uzudj_header.png" alt="">
+                </div>
+                <div class="caract_text col-12 col-sm-6">
+                    <p>UZU Dj es Open Source, por lo que el código se encuentra disponible en muestro repositorio de GitHub dando la posibilidad de modificarlo para incorporarle nuevas funciones o efectos en la iluminación si sabes algo de programación.</p>
                 </div>
 
                 <div class="caract_keys col-12">
@@ -173,13 +200,13 @@
     </div>
 
     <div class="contactanos" id="contactanos">
-        <h1>Para este u otros proyectos, contactanos a <a href="mailto:contacto@uzu.cl">contacto@uzu.cl</a> o en nuestras Redes Sociales:</h1>
+        <h1>Para este u otros proyectos, contactanos a <a href="mailto:contacto@uzu.cl">contacto@uzu.cl</a> o buscanos en nuestras Redes Sociales:</h1>
     </div>
     
     <div class="rrss" id="rrss">
         <div class="container">
             <div class="row">
-                <a class="col-3 rrss_box" href="https://www.instagram.com/uzugamepad/">
+                <a class="col-6 col-md-3 rrss_box" href="https://www.instagram.com/uzugamepad/">
                     <div class="rrss_img">
                         <svg x="0px" y="0px" width="169.1px" height="169.1px" viewBox="0 0 169.1 169.1" style="enable-background:new 0 0 169.1 169.1;" xml:space="preserve">
                                 <path d="M122.8,0.8H46.3C21,0.8,1.4,20.5,1.4,46v77.1c0,25.5,19.6,45.2,44.9,45.2h76.5c25.3,0,44.9-19.7,44.9-45.2V46
@@ -196,7 +223,7 @@
                 </a>
                 
 
-                <a class="col-3 rrss_box" href="http://github.com">
+                <a class="col-6 col-md-3 rrss_box" href="http://github.com">
                     <div class="rrss_img">
                         <svg x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                             <path d="M256,5.3C114.6,5.3,0,120.4,0,262.4c0,113.5,66.7,201.1,164.7,240.1c14.7,2.9,30.8-0.3,29.2-14
@@ -211,7 +238,7 @@
                     <h3>GitHub</h3>
                 </a>
 
-                <a class="col-3 rrss_box" href="http://youtube.com">
+                <a class="col-6 col-md-3 rrss_box" href="http://youtube.com">
                     <div class="rrss_img">
                         <svg x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                             <path d="M499.9,133.9c-5.9-21.8-23-39-44.8-44.8c-39.8-10.9-199-10.9-199-10.9s-159.2,0-199,10.5
@@ -223,7 +250,7 @@
                     <h3>Youtube</h3>
                 </a>
 
-                <a class="col-3 rrss_box" href="https://www.facebook.com/uzugamepad/">
+                <a class="col-6 col-md-3 rrss_box" href="https://www.facebook.com/uzugamepad/">
                     <div class="rrss_img">
                         <svg x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                             <path d="M448,0H64C28.7,0,0,28.7,0,64v384c0,35.3,28.7,64,64,64h190V335h-63v-80h63v-61.5c0-53,39.9-98.5,92.9-98.5H414

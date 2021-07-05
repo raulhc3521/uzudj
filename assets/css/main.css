@@ -713,6 +713,23 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   margin: 0 auto;
   transition: all 0.1s ease-in-out;
 }
+.navbar .burger_lines {
+  transform: rotate(90deg);
+  letter-spacing: -3px;
+  padding-top: 18px;
+}
+.navbar .colapse {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.navbar input:checked ~ .colapse {
+  height: 100px;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .row {
+  grid-row-gap: 0px;
+}
 .navbar .col-2 {
   margin: 15px 0;
   text-align: center;
@@ -726,7 +743,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .logo_scroll {
-  height: 50px !important;
+  height: 40px !important;
   width: 100px !important;
   transition: all 0.3s ease-in-out;
 }
@@ -826,7 +843,7 @@ html {
 }
 .precios p {
   text-align: center;
-  margin: 40px 30% 100px 30%;
+  margin: 40px 20% 100px 20%;
 }
 .precios .subtitle {
   text-align: center;
@@ -834,7 +851,7 @@ html {
 }
 
 .rrss {
-  margin: 150px 25% 200px 25%;
+  margin: 150px 10% 200px 10%;
 }
 .rrss .rrss_box {
   height: 100px;
@@ -880,7 +897,7 @@ html {
 
 .contactanos h1 {
   text-align: center;
-  margin: 100px 20%;
+  margin: 100px 10%;
   color: #262626;
 }
 .contactanos a {
