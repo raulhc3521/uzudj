@@ -16,13 +16,292 @@
     
 </head>
 <body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="row">
 
-    <header class="Home_container">
-        <img src="assets/img/uzudj.svg" alt="Logo uzudj">
-        <h3>Próximamente</h3>
+                <div class="col-1 d-none-md"></div>
+                <div class="col-2 d-none d-block-md"><a href="#caracteristicas">Características</a></div>
+                <div class="col-2 d-none d-block-md"><a href="#precios">Precios</a></div>
+
+                <div class="col-10 col-sm-4">
+                    <a href="#home" onclick="uncheck()">
+                        <img class="logo" src="assets/img/uzudj.svg" alt="">
+                    </a>
+                </div>
+                
+                <div class="col-2 d-none d-block-md"><a href="#contactanos">Contactanos</a></div>
+                <div class="col-2 d-none d-block-md"><a href="#rrss">Redes Sociales</a></div>
+                <label class="col-1 d-none-md" for="burger"><h3 class="burger_lines">|||</h3></label>
+                <input class="d-none" type="checkbox" id="burger">
+
+                <div class="col-12 colapse d-none-md">
+                    <ul>
+                        <li><a onclick="uncheck()" href="#caracteristicas">Características</a></li>
+                        <li><a onclick="uncheck()" href="#precios">Precios</a></li>
+                        <li><a onclick="uncheck()" href="#contactanos">Contactanos</a></li>
+                        <li><a onclick="uncheck()" href="#rrss">Redes Sociales</a></li>
+                    </ul>   
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <header class="Header" id="home">
+        <h3>Es un Gamepad de código abierto para Videojuegos Rítmicos simuladores de Dj, es compatible con Windows y con gran parte de los videojuegos rítmicos para PC.</h3>
+        <img src="assets/img/uzudj_header.png" alt="uzudj gamepad render">
     </header>
-    <footer>
-        <h5>2021 © UZU - Todos los derechos reservados.</h5>
+    <div class="caracteristicas" id="caracteristicas">
+        <div class="container_fluid">
+
+            <div class="row">  
+
+                <div class="caract_text col-12 d-flex d-none-md">
+                    <p class="">Posee una gran robustez gracias a su carcasa fabricada en acero electropintada para brindar mayor firmeza y resistencia ante ralladuras, y para mayor seguridad, las botoneras también poseen de fondo placas de acero, dando mayor resistencia a las partes que mayor impacto reciben.</p>
+                </div>             
+                <div class="caract_img col-12 col-sm-6">
+                    <img src="assets/img/uzudj_rob.png" alt="">
+                </div>
+                <div class="caract_text col-sm-6 d-none d-flex-md">
+                    <p class="">Posee una gran robustez gracias a su carcasa fabricada en acero electropintada para brindar mayor firmeza y resistencia ante ralladuras, y para mayor seguridad, las botoneras también poseen de fondo placas de acero, dando mayor resistencia a las partes que mayor impacto reciben.</p>
+                </div>
+
+
+
+                <div class="caract_text col-12 col-sm-6 d-flex-md">
+                    <p class="">Iluminación RGB en sus tornamesas, con 2 colores que se mueven en dirección del movimiento del disco, los colores se pueden cambiar presionando los botones FN + Key8/9/10/11 o si sabes algo de programación, puedes modificar el código y cargar efectos de iluminación personalizados.</p>
+                </div>
+                <div class="caract_img col-12 col-sm-6 d-flex-md">
+                    <img src="assets/img/uzudj_luz.png" alt="">
+                </div>
+
+
+
+                <div class="caract_text col-12 d-flex d-none-md">
+                    <p>Botones 11 IST estilo Samduck y 2 Encoder rotatorios de 400ppr para lograr mayor calidad, sensibilidad y una sensación lo más cercana posible a lo árcade. Y si te preocupan la cantidad de botones, presionando el botón “FN” cambias la función de todos los botones, accediendo a botones configurables para los menús o cambiar la iluminación el pad.</p>
+                </div>
+                <div class="caract_img col-12 col-sm-6">
+                    <img src="assets/img/uzudj_zoom_keys.jpg" alt="">
+                </div>
+                <div class="caract_text col-sm-6 d-none d-flex-md">
+                    <p>Botones 11 IST estilo Samduck y 2 Encoder rotatorios de 400ppr para lograr mayor calidad, sensibilidad y una sensación lo más cercana posible a lo árcade. Y si te preocupan la cantidad de botones, presionando el botón “FN” cambias la función de todos los botones, accediendo a botones configurables para los menús o cambiar la iluminación el pad.</p>
+                </div>
+
+
+
+                <div class="caract_text col-12 col-sm-6 d-flex-md">
+                    <p>Microswitch de calidad y baja fuerza de presión, dando la posibilidad de escoger entre Omron de 25gf, Gersung de 50gf y Cherry de 75gf, esto en combinación de resortes de 30 o 60gf, genera una correcta respuesta y rapidez en los botones. Y si te preocupa el ruido de los botones, también se incluyen silenciadores que disminuyen el ruido.</p>
+                </div>
+                <div class="caract_img col-12 col-sm-6">
+                    <img src="assets/img/Microswitch.png" alt="">
+                </div>
+
+
+
+                <div class="caract_text col-12 d-flex d-none-md">
+                    <p>UZU Dj es Open Source, por lo que el código se encuentra disponible en muestro repositorio de GitHub dando la posibilidad de modificarlo para incorporarle nuevas funciones o efectos en la iluminación si sabes algo de programación.</p>
+                </div>
+                <div class="caract_img col-12 col-sm-6">
+                    <img src="assets/img/opensource.png" alt="">
+                </div>
+                <div class="caract_text col-sm-6 d-none d-flex-md">
+                    <p>UZU Dj es Open Source, por lo que el código se encuentra disponible en muestro repositorio de GitHub dando la posibilidad de modificarlo para incorporarle nuevas funciones o efectos en la iluminación si sabes algo de programación.</p>
+                </div>
+
+
+
+                <div class="caract_keys col-12 d-flex">
+                    <h3>Cada boton está configurado para simular una techa del teclado, teniendo 12 teclas para poder presiónar, y a su vez, presionando el boton “FN” se puede acceder a 8 teclas extras presionandolas en conjunto.</h3>
+                </div>
+                <div class="col-12 caract_key_container">
+                    <img class="caract_img_key" src="assets/img/uzudj_keys.jpg" alt="">
+                    <img class="caract_img_key_fn" src="assets/img/uzudj_keys_fn.jpg" alt="">
+                </div>
+
+                <div class=".caract_gen col-8 d-none d-block-md">
+                    <img class="caract_gen_img" src="assets/img/uzudj_caract_gen.jpg" alt="">
+                </div>
+                <div class="caract_gen_txt col-12 col-sm-4">
+                    <div class="caract_gen_txt_container"></div>
+                        <h3 class="bold">Características Generales:</h3>           
+                        <ul>
+                            <li>11 botones IST rectangulares + 2 botones genericos cuadrados.</li>
+                            <li>2 encoder rotatorios de 400ppr para los discos.</li>
+                            <li>1 Shield UZUDJ para conexión de componentes.</li>
+                            <li>1 Arduino micro (permite cambiar el codigo por uno propio).</li>
+                            <li>2 conectores para pedales u otro boton externo.</li>
+                            <li>Conector USB tipo B + Cable.</li>
+                            <li>Resortes de 35gf o 65gf para los botones a elección.</li>
+                            <li>Silenciadores de botones (opcionales).</li>
+                            <li> Microswitch  de 25, 50 o 75gf dependiendo del modelo del pad.</li>
+                            <li>Luces RGB configurables en cada disco.</li>
+                            <li>Cables con conectores rapidos y organizadores de cables.</li>
+                            <li>Chasis de acero electropintado para mayor resistencia y durabilidad</li>
+                        </ul>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="precios" id="precios">
+        <h1 class="subtitle">Precios</h1>
+        <p>El valor del pad depende del Microswitch que escojas, para lograr en conjunto con los resortes, una respuesta adecuada de los botones a tu estilo de juego.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 card_container">
+                    <div class="card">
+                        <div class="card_img">
+                            <img class="card_pad" src="assets/img/uzudj_rob.png" alt="">
+                            <img class="card_ms" src="assets/img/gersung.png" alt="">
+                        </div>                        
+
+                        <div class="card_description">
+                            <h3>UZUDJ 50gf</h3>
+                            <h4>Con microswitch Gersung de 50gf para botones con dureza intermedia y un sonido más "clicky".</h4>
+                        </div>
+
+                        <div class="valor">
+                            <h4 class="card_discount" >$380.000</h4>
+                            <h1>$360.000</h1>
+                        </div>
+                        
+                        <a href="https://wa.me/56951057389/?text=Hola,%20me%20interesa%20el%20uzudj%2050gf">
+                            <button class="card_button">Comprar</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 card_container">
+                    <div class="card">
+                        <div class="card_img">
+                            <img class="card_pad" src="assets/img/uzudj_rob.png" alt="">
+                            <img class="card_ms" src="assets/img/cherry.png" alt="">
+                        </div>                        
+
+                        <div class="card_description">
+                            <h3>UZUDJ 75gf</h3>
+                            <h4>Con microswitch Cherry de 75gf para botones mas silenciosos y con dureza un poco mas alta, ideal para usar con resorte de 30gf o sin resorte.</h4>
+                        </div>
+                        <div class="valor">
+                            <h4 class="card_discount" >$390.000</h4>
+                            <h1>$370.000</h1>
+                        </div>
+                        
+                        <a href="https://wa.me/56951057389/?text=Hola,%20me%20interesa%20el%20uzudj%2075gf">
+                            <button class="card_button">Comprar</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 card_container">
+                    <div class="card">
+                        <div class="card_img">
+                            <img class="card_pad" src="assets/img/uzudj_rob.png" alt="">
+                            <img class="card_ms" src="assets/img/omron.png" alt="">
+                        </div>                        
+
+                        <div class="card_description">
+                            <h3>UZUDJ 25gf</h3>
+                            <h4>Con microswitch OMRON de 25gf para botones más blandos y silencioso, requiere la incorporacion de resortes de 30gf o mas.</h4>
+                        </div>
+
+                        <div class="valor">
+                            <h4 class="card_discount" >$400.000</h4>
+                            <h1>$380.000</h1>
+                        </div>
+                        <a href="https://wa.me/56951057389/?text=Hola,%20me%20interesa%20el%20uzudj%2025gf">
+                            <button class="card_button">Comprar</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="contactanos" id="contactanos">
+        <h1>Para este u otros proyectos, contactanos a <a href="mailto:contacto@uzu.cl">contacto@uzu.cl</a> o buscanos en nuestras Redes Sociales:</h1>
+    </div>
+    
+    <div class="rrss" id="rrss">
+        <div class="container">
+            <div class="row">
+                <a class="col-6 col-md-3 rrss_box" href="https://www.instagram.com/uzugamepad/">
+                    <div class="rrss_img">
+                        <svg x="0px" y="0px" width="169.1px" height="169.1px" viewBox="0 0 169.1 169.1" style="enable-background:new 0 0 169.1 169.1;" xml:space="preserve">
+                                <path d="M122.8,0.8H46.3C21,0.8,1.4,20.5,1.4,46v77.1c0,25.5,19.6,45.2,44.9,45.2h76.5c25.3,0,44.9-19.7,44.9-45.2V46
+                                    C167.7,20.5,148.1,0.8,122.8,0.8z M152.9,123.1c0,17.3-12.9,30.4-30.1,30.4H46.3c-17.2,0-30.1-13.1-30.1-30.4V46
+                                    c0-17.3,12.9-30.4,30.1-30.4h76.5c17.2,0,30.1,13.1,30.1,30.4v76.1L152.9,123.1z"/>
+                                <path d="M84.5,41c-23.8,0-43.2,19.5-43.2,43.6c0,24,19.4,43.6,43.2,43.6s43.2-19.5,43.2-43.6
+                                    C127.8,60.5,108.4,41,84.5,41z M84.5,112.3C69.3,112.3,57,99.9,57,84.5c0-15.3,12.4-27.8,27.6-27.8s27.6,12.5,27.6,27.8
+                                    C112.1,99.9,99.7,112.3,84.5,112.3z"/>
+                                <path d="M129.2,28.2c-3,0-5.9,1.2-8,3.4c-2.1,2.1-3.3,5.1-3.3,8.1c0,3,1.2,6,3.3,8.1c2.1,2.1,5,3.4,8,3.4
+                                    c3,0,5.9-1.2,8-3.4c2.1-2.1,3.3-5.1,3.3-8.1c0-3-1.2-6-3.3-8.1C135.1,29.4,132.2,28.2,129.2,28.2z"/>
+                            </svg>
+                    </div>
+                    <h3>Instagram</h3>
+                </a>
+                
+
+                <a class="col-6 col-md-3 rrss_box" href="https://github.com/raulhc3521/uzudj-arduino">
+                    <div class="rrss_img">
+                        <svg x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path d="M256,5.3C114.6,5.3,0,120.4,0,262.4c0,113.5,66.7,201.1,164.7,240.1c14.7,2.9,30.8-0.3,29.2-14
+                            c-0.6-4.8-2.5-14.4-1.7-38.4c-72.5,19.5-85.3-31.5-85.3-31.5c-9.9-28.8-27.6-39.3-27.6-39.3c-27.4-19.9,2.8-16.5,2.8-16.5
+                            c25.7,1.8,35.1,23.8,35.1,23.8c22.8,39.3,60.2,32.5,74.8,25.9c2.3-16.6,3.5-26.3,15.4-36.7C150.7,369.2,92.7,349.4,92.7,251
+                            c0-28.1,10-53.1,26.4-71c-2.7-6.5-12.1-30.7,1.8-66.1c0,0,24-9.3,72.9,24c20.4-5.7,40.6-8.1,62.4-8.2c21.7,0.1,41.9,2.5,62.4,8.2
+                            c48.9-33.2,72.7-24.3,72.7-24.3c14,35.4,4.6,59.9,1.9,66.4c16.4,18,26.3,42.6,26.3,70.6c0,98.7-56.6,118.4-113.6,124.8
+                            c9.2,7.9,14.1,24,14.1,48c0,34.4-2.5,57.2-2.6,65.7c-0.1,11.3,12.2,17.5,27.5,14.5C447.6,459.2,512,375.9,512,262.4
+                            C512,120.4,397.4,5.3,256,5.3z"/>
+                            </svg>
+                    </div>
+                    <h3>GitHub</h3>
+                </a>
+
+                <a class="col-6 col-md-3 rrss_box" href="http://youtube.com">
+                    <div class="rrss_img">
+                        <svg x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path d="M499.9,133.9c-5.9-21.8-23-39-44.8-44.8c-39.8-10.9-199-10.9-199-10.9s-159.2,0-199,10.5
+                            c-21.4,5.9-39,23.5-44.8,45.3C1.7,173.7,1.7,256.2,1.7,256.2s0,83,10.5,122.3c5.9,21.8,23,39,44.8,44.8c40.2,10.9,199,10.9,199,10.9
+                            s159.2,0,199-10.5c21.8-5.9,39-23,44.8-44.8c10.5-39.8,10.5-122.3,10.5-122.3S510.8,173.7,499.9,133.9z M201.7,336.8V175.7
+                            l139.8,80.5L201.7,336.8z"/>
+                        </svg>
+                    </div>
+                    <h3>Youtube</h3>
+                </a>
+
+                <a class="col-6 col-md-3 rrss_box" href="https://www.facebook.com/uzugamepad/">
+                    <div class="rrss_img">
+                        <svg x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path d="M448,0H64C28.7,0,0,28.7,0,64v384c0,35.3,28.7,64,64,64h190V335h-63v-80h63v-61.5c0-53,39.9-98.5,92.9-98.5H414
+                            v80h-34.7c-17.7,0-29.3,0.4-29.3,18.1V256l78-1l-32,80h-46v177h98c35.3,0,64-28.7,64-64V64C512,28.7,483.3,0,448,0z"/>
+                        </svg>
+                    </div>
+                    <h3>Facebook</h3>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container_fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <img src="assets/img/uzudj.svg" alt="">
+                    <h5>2021 © UZU - Todos los derechos reservados.</h5>
+                </div>
+                <div class="col-12 col-sm-6 footer_txt">
+                    <h4>Para coordinar exposición, pruebas de este u otro pad, errores en la página web, sugerencias, reclamos, soporte técnico, etc. Por favor contactanos <a href="mailto:contacto@uzu.cl">contacto@uzu.cl</a> o en nuestras redes sociales.</h4>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- Script propio -->
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>

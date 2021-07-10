@@ -1,0 +1,84 @@
+//navbar
+@media only screen and (min-width: 1200px) {
+    .logo {
+        width: 300px !important;
+    }
+}
+.navbar {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: $dark;
+    transition: all 0.2s ease-in-out;
+
+    .logo {
+        width: 220px;
+        height: 250px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    img {
+        object-fit: fill;
+        margin: 0 auto;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .burger_lines {
+        transform: rotate(90deg);
+        letter-spacing: -3px;
+        padding-top: 18px;
+    }
+
+    .colapse {
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+    }
+
+    input:checked ~ .colapse {
+        height: 100%;
+        padding-bottom: 15px;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;    
+    }
+    .row {
+        grid-row-gap: 0px;
+    }
+
+    .col-2 {
+        margin: 15px 0;
+        text-align: center;
+    }
+    ul {
+        margin-top: 10px;
+    }
+    li {
+        text-align: center;
+        line-height: 50px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $teal;
+        font-size: 14px;
+        font-weight: $regular;
+        
+        &:hover {
+            color: $light-teal;
+        }
+    }
+}
+
+.logo_scroll {
+    height: 40px !important;
+    width: 100px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar_scroll {
+    background-color: $light-gray;
+    transition: all 0.2s ease-in-out;
+}
+

@@ -1,0 +1,98 @@
+h1, h2, h3, h4, h5, p, a, button, input, textarea, li, figcaption {
+    font-family: $open-sans;
+    color: $dark;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: 3px;
+}
+
+a {
+    font-size: $a-size;
+    color: $teal;
+    text-decoration: none;
+    &:hover {
+        color: $cyan;
+    }
+}
+
+h1 {
+    font-size: $h1-size;
+    line-height: 40px;
+}
+h2 {
+    font-size: $h2-size;
+    line-height: 24px;
+}
+h3 {
+    font-size: $h3-size;
+    font-weight: $regular;
+    line-height: 20px;
+}
+h4 {
+    font-size: $h4-size;
+    line-height: 18px;
+}
+h5 {
+    font-size: $h5-size;
+    line-height: 16px;
+    
+}
+p {
+    font-size: $p-size;
+    line-height: 18px;
+    padding: 3px 0;
+}
+li{
+    font-size: $li-size;
+    line-height: 15px;
+    list-style-type: disc
+}
+ol{
+    padding: 0 0 20px 30px;
+    margin: 0;
+}
+figcaption {
+    font-size: $p-size;
+    line-height: 18px;
+    color: $light-gray;
+    font-weight: $light;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+br{
+      line-height: 20px;  
+}
+
+button {
+    font-size: $h4-size;
+    font-weight: $bold;
+    color: $white;
+}
+
+.bold {
+    font-weight: $bold;
+    color: $dark;
+}
+.text-center {
+    text-align: center;
+}
+.text-turq {
+    color: $cyan;
+}
+.text-viol {
+    color: $magenta;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active, input:-webkit-autofill::first-line {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    font-family: $open-sans;
+}
+
+@media only screen and (min-width: 768px) {
+    p {
+        font-size: $pd-size;
+        line-height: 18px;
+        padding: 3px 0;
+    }
+}
