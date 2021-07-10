@@ -2,18 +2,6 @@
 .card_container {
     height: 400px;
 }
-.card:hover {
-    box-shadow: 0 5px 10px 0 $gray;
-    transition: all 0.3s ease-in-out;
-    width: 260px;
-    .card_description {
-        padding: 15px 20px;
-        transition: all 0.3s ease-in-out;
-    }
-    .card_button {
-        z-index: 9;
-    }
-}
 
 .card {
     width: 250px;
@@ -25,13 +13,14 @@
 
     .card_description {
         padding: 10px 20px;
-        height: 100px;
+        height: 130px;
         width: 210px;
         margin: 0 auto;
         transition: all 0.1s ease-in-out;
         
     }
     h3 {
+        margin-top: 30px;
         text-align: center;
         font-weight: $bold;
     }
@@ -61,8 +50,8 @@
         .card_ms {
             width: 90%;
             position: relative;
-            top: -90px;
-            right: -80px;
+            top: -100px;
+            right: -70px;
         }
     
         .card_pad {
@@ -83,4 +72,19 @@
         }
     }
     
+}
+
+@media only screen and (min-width: 768px) {
+    .card:hover {
+        box-shadow: 0 5px 10px 0 $gray;
+        transition: all 0.3s ease-in-out;
+        width: 260px;
+        .card_description {
+            padding: 15px 20px;
+            transition: all 0.3s ease-in-out;
+        }
+        .card_button {
+            z-index: 9;
+        }
+    }
 }

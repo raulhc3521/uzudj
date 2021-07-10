@@ -1,50 +1,110 @@
+// Caracteristicas
+
 .caracteristicas {
-    .caract_img_key {
-        width: 100%;
+    overflow-x: hidden;
+    .caract_key_container {
+        position: relative;
+        padding-bottom: 100px;
     }
+    .caract_img_key {
+        width: 100vw;
+        position: absolute;
+        z-index: -2;
+    }
+    .caract_img_key_fn {
+        width: 100vw;
+        z-index: 2;
+        animation: key_fn 4s infinite;
+    }
+
     .row {
         grid-row-gap: 0px !important;
 
-    }
-    .caract_img, .caract_text {
-        height: 500px;
-        width: 100%;
     } 
 
     .caract_img {
-        background-color: $gray;
+        background-color: $light-gray;
+
         img {
             height: 100%;
-            max-width: 100%;
+            width: 100%;
             object-fit: cover;
+            object-position: center;
         }
     }
     .caract_text {
+        height: 100%;
+        width: 100%;
         background-color: $dark;
+
         p {
             color: $white;
-            max-width: 500px;
-            height: 300px;
-            margin: 100px;
+            margin: 50px 15px;
             text-align: justify;
         }
     }
     .caract_keys {
+        flex-direction: row;
+        flex-wrap: wrap;
         height: 300px;
         text-align: center;
+
         h3 {
-            margin: 140px 20%;
+            max-width: 1000px;
+            padding: 30px;
+            margin: auto;
         }
     }
     .caract_gen_txt {
-        margin: 150px 10% 0px 5%; 
-        ul {
-            margin-left: 20px;
+        max-width: 500px;
+        padding: 0 20px 0 40px;
+
+        .caract_gen_txt_container {     
+            margin: 0 auto;
         }
     }
+    
     .caract_gen_img {
-        margin: 150px 0 0 0;
         float: right;
-        width: 180%;
+        width: 150%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .caracteristicas {
+        .caract_img {
+            height: 400px;
+            background-color: $light-gray;
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .caract_text {
+            background-color: $dark;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 400px;
+    
+            p {
+                color: $white;
+                max-width: 500px;
+                margin: auto;
+                padding: 50px;
+            }
+        }
+        .caract_gen_txt {
+            max-width: 500px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: auto;
+    
+            .caract_gen_txt_container {     
+                margin: 0;
+            }
+        }
     }
 }

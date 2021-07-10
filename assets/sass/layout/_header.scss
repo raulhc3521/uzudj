@@ -1,16 +1,25 @@
 //header
-
 header {
     text-align: center;
+    overflow-x: hidden;
+    max-width: 100%;
     
     h3 {
         max-width: 500px;
         margin: 0 auto;
-        padding-top: 250px;
+        padding: 200px 20px 50px 20px;
+        font-size: $h3-size;
     }
     img {
-        max-width: 60%;
-        margin-bottom: 200px;
+        width: 150%;
+        margin-left: -25%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header img {
+        max-width: 100%;
+        margin-left: 0;
     }
 }
 

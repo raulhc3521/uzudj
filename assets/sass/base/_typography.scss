@@ -16,10 +16,6 @@ a {
     }
 }
 
-h1, h2, h3, h4, h5, p {
-    //font-weight: $regular;
-}
-
 h1 {
     font-size: $h1-size;
     line-height: 40px;
@@ -49,7 +45,7 @@ p {
 }
 li{
     font-size: $li-size;
-    line-height: 14px;
+    line-height: 15px;
     list-style-type: disc
 }
 ol{
@@ -88,8 +84,15 @@ button {
     color: $magenta;
 }
 
-
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active, input:-webkit-autofill::first-line {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
     font-family: $open-sans;
+}
+
+@media only screen and (min-width: 768px) {
+    p {
+        font-size: $pd-size;
+        line-height: 18px;
+        padding: 3px 0;
+    }
 }

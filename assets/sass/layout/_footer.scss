@@ -3,17 +3,34 @@
     background-color: $light-gray;
     height: 100%;
     .footer_txt {
-        padding: 70px;
+        padding: 0 50px 50px 50px;
         p {
             color: $dark;
-            text-align: justify;
+            text-align: center;
         }
     }
     img {
-        padding: 40px 0 20px 0;
-        width: 300px;
+        padding: 40px 0 0 0;
+        width: 250px;
     }
-    h5 {
+    h4, h5 {
         text-align: center;
     }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {
+        .footer_txt {
+            padding: 70px;
+            h4, h5 {
+                color: $dark;
+                text-align: justify;
+            }
+        }
+        img {
+            padding: 40px 0 20px 0;
+            width: 300px;
+        }
+    }
+    
 }

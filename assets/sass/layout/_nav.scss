@@ -34,11 +34,14 @@
         height: 0px;
         overflow: hidden;
         transition: all 0.2s ease-in-out;
+        opacity: 0;
     }
 
     input:checked ~ .colapse {
-        height: 100px;
-        transition: all 0.3s ease-in-out;
+        height: 100%;
+        padding-bottom: 15px;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;    
     }
     .row {
         grid-row-gap: 0px;
@@ -48,10 +51,19 @@
         margin: 15px 0;
         text-align: center;
     }
+    ul {
+        margin-top: 10px;
+    }
+    li {
+        text-align: center;
+        line-height: 50px;
+    }
 
     a {
         text-decoration: none;
-        color: $dark;
+        color: $teal;
+        font-size: 14px;
+        font-weight: $regular;
         
         &:hover {
             color: $light-teal;
