@@ -112,7 +112,7 @@ p {
 }
 
 li {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 15px;
   list-style-type: disc;
 }
@@ -672,6 +672,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .card .card_img {
   height: 140px;
 }
+.card .card_img .card_tape {
+  position: relative;
+  top: -260px;
+  right: 0px;
+  max-width: 130px;
+  transition: all 0.1s ease-in-out;
+}
 .card .card_img .card_ms {
   width: 90%;
   position: relative;
@@ -707,6 +714,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   }
   .card:hover .card_button {
     z-index: 9;
+  }
+  .card:hover .card_img .card_tape {
+    top: -270px;
+    transition: all 0.3s ease-in-out;
   }
 }
 /* width */
@@ -968,7 +979,7 @@ html {
 }
 .precios p {
   text-align: center;
-  margin: 40px 20% 100px 20%;
+  margin: 20px 20% 100px 20%;
 }
 .precios .subtitle {
   text-align: center;

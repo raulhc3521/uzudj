@@ -47,6 +47,13 @@
     
     .card_img {
         height: 140px;
+        .card_tape {
+            position: relative;
+            top: -260px;
+            right: 0px;
+            max-width: 130px;
+            transition: all 0.1s ease-in-out;
+        }
         .card_ms {
             width: 90%;
             position: relative;
@@ -85,6 +92,10 @@
         }
         .card_button {
             z-index: 9;
+        }
+        .card_img .card_tape {
+            top: -270px;
+            transition: all 0.3s ease-in-out;
         }
     }
 }
