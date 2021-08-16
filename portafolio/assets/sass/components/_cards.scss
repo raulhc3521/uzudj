@@ -1,0 +1,75 @@
+.modal {
+    .card1 {
+        border: 2px dashed $gray;
+        border-radius: 50px;
+        width: 220px;
+        height: 50px;
+        padding: 20px 10px 10px 10px;
+
+        &-img1, &-img2, &-img3, &-img4, &-img5, &-img6, &-img7 {
+            display: inline-block;
+            position: relative;
+            top: 4px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 35px;
+            height: 35px;
+            margin: 0 30px !important;
+            border: none !important;
+        }
+
+        .card1-text {
+            display: inline-block;
+            width: 100px;
+            height: 35px;
+            p {
+                font-weight: $bold;
+                color: $cobalt-dark;
+                line-height: 18px;
+                margin: 0 !important;
+            }  
+        }
+    }
+    .container {
+        margin-bottom: 40px;
+    }
+}
+
+.modal-1 .card1 {
+    &-img1 {
+        background-image: url(../images/modal_gasconnect/tetris.svg);
+    }
+    &-img2 {
+        background-image: url(../images/modal_gasconnect/duda.svg);
+    }
+    &-img3 {
+        background-image: url(../images/modal_gasconnect/error.svg);
+    }
+    &-img4 {
+        background-image: url(../images/modal_gasconnect/registro.svg);
+    }
+    &-img5 {
+        background-image: url(../images/modal_gasconnect/seguimiento.svg);
+    }
+    &-img6 {
+        background-image: url(../images/modal_gasconnect/descuento.svg);
+    }
+    &-img7 {
+        background-image: url(../images/modal_gasconnect/seguridad.svg);
+    }
+}
+
+.modal-2 .card1 {
+    &-img1 {
+        background-image: url(../images/modal_radioactiva/lupa.svg);
+    }
+    &-img2 {
+        background-image: url(../images/modal_radioactiva/caos.svg);
+    }
+    &-img3 {
+        background-image: url(../images/modal_radioactiva/inconsistencia.svg);
+    }
+    &-img4 {
+        background-image: url(../images/modal_radioactiva/tetris.svg);
+    }
+}

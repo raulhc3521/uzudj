@@ -1,0 +1,119 @@
+html {
+    scroll-behavior: smooth;
+    transition: all 5s ease-in-out;
+
+}
+
+header {
+    padding: 100px 10px 100px 20px;
+    transition: all .2s ease-in-out;
+    @media only screen and (min-width: 768px) {
+        padding: 350px 10px;
+    }
+
+    .descripcion__text {
+        
+        .descripcion__text__uxui {
+            color: $violet;
+        }
+        .descripcion__text__di {
+            color: $turquoise;
+        }
+    }
+    .descripcion__avatar {
+        transition: all .3s ease-in-out;
+        position: fixed;
+        top: 320px;
+        left: 0;
+        height: 30vw;
+        width: 30vw;
+        max-width: 350px;
+        max-height: 350px;
+        background-color: $turquoise;
+        background-image: url(../images/foto_perfil.png);
+        opacity: 1;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        z-index: 2;
+        box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: .2);
+
+        @media only screen and (min-width: 768px) {
+            left: 4vw;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            top: 250px;
+            left: 6vw;            
+        }
+
+        .box_avatar {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $turquoise;
+            transition: all .3s ease-in-out;
+        }
+    }
+
+    .scroll {
+        -webkit-user-drag: none;
+	    -webkit-app-region: no-drag;
+        -webkit-tap-highlight-color: transparent;
+        text-decoration: none;
+        background-color: $violet;
+        position: fixed;
+        bottom: -75px;
+        right: 50px;
+        height: 100px;
+        width: 100px;
+        z-index: 4;
+        padding: 15px 0 5px;
+        text-align: center;
+        box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: .2);
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            bottom: -65px;
+            transition: all .2s ease-in-out;
+            box-shadow: 1px 2px 8px rgba($color: #000000, $alpha: .6);
+        }
+        
+        .hello {
+            padding-bottom: 80px;
+            color: $white;
+        }
+        .up {
+            transform: rotate(135deg);
+            text-align: left;
+            margin-top: -8px;
+            color: $white;
+        }
+    }
+    
+}
+
+.rotate_avatar {
+    transition: all .6s ease-in-out;
+    transform: rotate(-45deg);
+    left: -280px !important;
+    @media only screen and (min-width: 1200px) {
+        left: -300px !important;
+    }
+
+    .box_avatar {
+    opacity: 1 !important;
+    }
+
+}
+
+.rotate_scrollup {
+    transform: rotate(-135deg);
+    bottom: -90px !important;
+
+    &:hover {
+            bottom: -80px !important;
+            transition: all .2s ease-in-out;
+            box-shadow: 1px 2px 8px rgba($color: #000000, $alpha: .6);
+        }
+}

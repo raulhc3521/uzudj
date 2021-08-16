@@ -1,0 +1,233 @@
+.modal-1, .modal-2, .modal-3, .modal-4 {
+    transition: all .4s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    transition: all .4s ease-in-out;
+
+    .modal__conjunto {
+        margin: auto;
+    }
+
+    .modal--overflow {
+        background-color: $white;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 10px;
+        max-width: 600px;
+        height: 85vh;
+        padding-bottom: 60px;
+        display: inline-block;
+        @media only screen and (min-width: 992px) {
+            max-width: 800px;
+        }
+    }
+    .modal__contenido {
+        overflow: auto;
+        height: 100%;
+        padding: 30px 8%;
+
+        .sub {
+            text-align: center;
+        }
+        .sub-bold {
+            font-weight: $bold;
+        }
+        .img-modal {
+            margin-bottom: 50px;
+        }
+        .prototype-mobile, .prototype-desktop {
+            display: none;
+        }
+        .modal-description {
+            padding: 10px 0 40px;
+        }
+        
+        .modal-section {
+            padding: 35px 0;
+            h3 {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+            img {
+                margin-top: 10px;
+                border: 1px solid $light-gray;
+            }
+            .container-fluid {
+                margin: 40px 0;
+                padding: 0;
+
+                .row{
+                    grid-row-gap: 30px;
+                }
+            }
+            
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h2, h4, img {
+            width: 100%;
+        }
+        p {
+            margin-top: 10px;
+        }   
+        a {
+            font-size: $p-size;
+            line-height: 22px;
+            color: $turquoise;
+            font-weight: $regular;
+            text-decoration: underline;
+            transition: all .2s ease-in-out;
+        }   
+        figcaption {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }   
+}
+
+.proto-m, .proto-d {
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.proto {
+    display: flex;
+    position: relative;
+    transition: all .3s ease-in-out;
+
+    label {
+        transition: all .3s ease-in-out;
+    }
+
+    #proy:checked ~ .open_proto {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    #proy:checked ~ .close_proto {
+        visibility: visible;
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+    #proyRA:checked ~ .open_proto {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    #proyRA:checked ~ .close_proto {
+        visibility: visible;
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+    #prot-m:checked ~ .open_proto {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    #prot-m:checked ~ .close_proto {
+        visibility: visible;
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+    #prot-d:checked ~ .open_proto {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    #prot-d:checked ~ .close_proto {
+        visibility: visible;
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+
+    .close_proto {
+        position: absolute;
+        display: flex;
+        bottom: 65px;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+
+        a {
+            margin: 0 auto;
+            color: $violet;
+            &:hover {
+                color: $turquoise;
+            }
+        }
+    }
+    
+
+    .open_proto {
+        display: flex;
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        background-color: $white;
+        border: 1px solid $white;
+        visibility: visible;
+        opacity: 1;
+        transition: all .3s ease-in-out;
+        
+        a {
+            margin: auto;
+            text-align: center;
+            font-size: $h3-size;
+            line-height: 30px;
+            &:hover {
+                color: $violet;
+            }
+        }
+    }
+}
+
+#box-modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0,0,0,.5);
+    backdrop-filter: blur(2px);
+    z-index: 22;
+    transition: all .3s ease-in-out ;
+    
+    .modal__close{
+        z-index: 23;
+        position: absolute;
+        margin: 0;
+    }
+
+    #box-modal-content {
+        margin: auto;
+        display: block;
+        width: 100%;
+
+        @media only screen and (min-width: 768px) {
+            max-width: 70%;  
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

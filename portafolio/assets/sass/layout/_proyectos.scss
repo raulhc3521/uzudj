@@ -1,0 +1,212 @@
+.proyectos {
+    .prototipe {
+        display: flex;
+        width: 100%;
+        padding: 0 auto;
+        .device-mobile {
+            margin: 0 auto;
+        }
+    }
+    -webkit-tap-highlight-color: transparent; 
+    label {
+        cursor: pointer;
+    }
+
+    input {
+        display: none;
+    }
+
+    &__ux {
+        background-color: $light-turquoise;
+        transition: all .5s ease-in-out;
+        background-image: url(../images/device.svg);
+        background-repeat: no-repeat;
+        background-position-y: -30px;
+        background-position-x: center;
+        background-size: 340px;        
+
+        .title {
+            padding-top: 100px;
+            text-align: center;
+            color: $dark;
+            transition: all .5s ease-in-out;
+        }
+
+        &:hover {
+            background-color: $turquoise;
+            transition: all .2s ease-in-out;
+            .title {
+                color: $white;
+                transition: all .2s ease-in-out;
+            }
+            .arrow__container .arrow1 {
+                filter: brightness(100%);
+                transition: all .2s ease-in-out;
+            }
+        }
+    }
+
+    &__di {
+        background-color: $light-violet;
+        transition: all .5s ease-in-out;
+        background-image: url(../images/plint.svg);
+        background-repeat: no-repeat;
+        background-position-y: -60px;
+        background-position-x: center;
+        background-size: 380px;
+        border-top: 30px solid $white;
+
+        .title {
+            padding-top: 100px;
+            text-align: center;
+            color: $dark;
+            transition: all .5s ease-in-out;
+        }
+
+        &:hover {
+            background-color: $violet;
+            transition: all .2s ease-in-out;
+            .title {
+                color: $white;
+                transition: all .2s ease-in-out;
+            }
+            .arrow__container .arrow1 {
+                filter: brightness(100%);
+                transition: all .2s ease-in-out;
+            }
+        }
+    } 
+    
+    @media only screen and (min-width: 576px) {
+        .proyectos__di {
+            background-size: 550px;
+            background-position-y: -110px;
+            background-position-x: center;
+        }
+        .proyectos__ux {
+            background-size: 500px;
+            background-position-y: -150px;
+            background-position-x: center;
+        }
+    }
+
+    .arrow__container {
+        height: 80px;
+        display: block;
+        margin: 10px auto;
+
+
+        .arrow1, .arrow2 {
+            background-image: url(../images/arrow.svg);
+            width: 40px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: 0 auto;
+            filter: brightness(0);
+            transition: all .5s ease-in-out;
+        }
+        .arrow1 {
+            position: relative;
+            top: 0px;
+            opacity: 1;
+            animation: arrow 1.5s infinite;  
+            animation-timing-function: linear;          
+        }
+
+        
+    }
+
+    .proyectos__desplegable1, .proyectos__desplegable2 {
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: height .8s ease-in-out;
+        
+    }
+
+    #desplegable1:checked ~ .proyectos__desplegable1 { 
+        animation: despliegue .8s ease-in-out;
+        height: 600px;
+    }
+
+    #desplegable2:checked ~ .proyectos__desplegable2 {
+        animation: despliegue .8s ease-in-out;
+        height: 600px;
+    }
+    
+    
+    
+    .proyectos__proyecto{
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 300px;
+        background-color: $dark;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        transition: all 10s ease-in-out;
+      
+
+        &:hover {
+            background-position: bottom;
+            transition: background-position 50s linear;    
+        }
+
+        .proyectos__descripcion {
+            @media only screen and (min-width: 992px) {
+                padding: 60px 30px 0 90px;
+            }
+            background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+            float: right;
+            width: 300px;
+            height: 400px;
+            text-align: right;
+            padding: 60px 15px 0 90px;
+            margin-top: -15px;
+
+            h3, h5 {
+                color: $white;
+            }
+
+            p {
+                margin-bottom: 5px;
+                color: $white;
+            }
+            
+            a {
+                cursor: pointer;
+                display: inline-block;
+                text-decoration: none;
+                color: $turquoise;
+                transition: all .2s ease-in-out;
+                border: 2px solid $turquoise;
+                border-radius: 5px;
+                padding: 5px 7px;
+
+                &:hover{
+                    margin-right: 3px;
+                    color: violet;
+                    transition: all .2s ease-in-out;
+                    border: 2px solid $violet;
+                }
+            }
+            
+        }
+    }
+
+    &__proyecto--bg1 {
+        background-image: url(../images/gasconnect_thumb.jpg);
+    }
+    &__proyecto--bg2 {
+        background-image: url(../images/radioactiva_thumb.jpg);
+    }
+    &__proyecto--bg3 {
+        background-image: url(../images/adario_thumb2.jpg);
+    }
+    &__proyecto--bg4 {
+        background-image: url(../images/plint_thumb.jpg);
+    }
+}

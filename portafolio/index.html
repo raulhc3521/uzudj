@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raúl Higueras | Diseñador UX/UI - Diseñador Industrial</title>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- estilo CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/be26ab9caa.js"></script> 
+
+</head>
+<body>
+
+    <nav class="navbar select-none">
+        <div class="container d-none d-block-xl">
+            <div class="row">
+                <div class="col-2">
+                    <a href="#descripcion" class="navbar__text-title--active">Raúl Higueras</a>
+                </div>
+                <a href="#proyectos" class="navbar__text--inactive col-2">Proyectos</a>
+                <a href="#educacion" class="navbar__text--inactive col-2">Educación</a>
+                <a href="#experiencia" class="navbar__text--inactive col-2">Experiencia</a>
+                <a href="#curriculum" class="navbar__text--inactive col-2">Curriculum</a>
+                <a href="#contacto" class="navbar__text--inactive col-2">Contacto</a>
+            </div>
+        </div>
+
+        <div class="container-fluid d-none-xl">
+
+            <label for="nav__desplegable"><h4 class="navbar__text-title-desplegable">Raúl Higueras</h4><div class="burger"><h4 class="burger">|||</h4></div></label>
+            
+            <input type="checkbox" id="nav__desplegable">
+            
+            <label for="nav__desplegable" class="row desplegable_nav">
+                <a href="#descripcion" onclick="uncheck()" class="navbar__text--inactive col-12">Descripción</a>
+                <a href="#proyectos" onclick="uncheck()" class="navbar__text--inactive col-12">Proyectos</a>
+                <a href="#educacion" onclick="uncheck()" class="navbar__text--inactive col-12">Educación</a>
+                <a href="#experiencia" onclick="uncheck()" class="navbar__text--inactive col-12">Experiencia</a>
+                <a href="#curriculum" onclick="uncheck()" class="navbar__text--inactive col-12">Curriculum</a>
+                <a href="#contacto" onclick="uncheck()" class="navbar__text--inactive col-12">Contacto</a>
+            </label>
+        </div>
+               
+    </nav>
+    
+    <header id="descripcion" class="container descripcion">
+        <div class="row">
+            <div class="col-4 descripcion__avatar d-none d-block-md">
+                <div class="box_avatar"></div>
+            </div>
+            <div class="col-4 d-none d-block-sm"></div>
+
+            <div class="col-12 col-sm-8 descripcion__text">
+                
+                <h1>Raúl Higueras Caballero</h1>
+
+                <h3><span  class="descripcion__text__uxui">Diseñador UX/UI</span> - <span class="descripcion__text__di">Diseñador Industrial</span></h3>
+
+                <h5>Soy amante de la computación, la música, los videojuegos, la ciencia y la tecnología en general, me destaco por ser una persona creativa, que constantemente da soluciones a las problemáticas que se presentan, como Diseñador Industrial desarrollé productos tecnológicos para Adultos Mayores que incorporaban el Diseño de Interacción como eje principal. Gracias a estos proyectos generé un amplio interés en la Experiencia de Usuario y actualmente soy Diseñador UX/UI.</h5>
+            </div>
+
+        </div> 
+        <a href="#descripcion" class="scroll d-none d-block-sm select-none">
+            <h5 class="hello">hello</h5>
+            <h5 class="up">up</h5>
+        </a>       
+    </header>
+
+    <section id="proyectos" class="proyectos">
+        <div class="content">
+            <h2 class="proyectos__title">Proyectos</h2>
+        </div>
+
+        <div class="proyectos__ux content">
+               <div class="">
+                    <label for="desplegable1">
+                        <h2 class="title select-none">Diseño UX/UI</h2>
+                        <div class="arrow__container">
+                            <div class="arrow1"></div>
+                        </div>
+                    </label>
+                
+                    <input type="checkbox" id="desplegable1">
+
+                    <div class="proyectos__desplegable1">
+
+                        <div class="proyectos__proyecto proyectos__proyecto--bg1">
+                            <div class="proyectos__descripcion select-none">
+                                <h3>Gasconnect</h3>
+                                <h5>2020 - Desafío Latam</h5>
+                                <p>Ejercicio final de la carrera de Diseño UX/UI de Desafío Latam, donde se abordaron diversas plataformas con el objetivo de hacer un estudio de usabilidad para posteriormente Diseñar mejoras a esta plataforma.</p>
+                                <a onclick="open_modal1()">Ver Más</a>
+                                
+                            </div>
+                        </div>
+
+                        <div class="proyectos__proyecto proyectos__proyecto--bg2">
+                            <div class="proyectos__descripcion select-none">
+                                <h3>Radio Activa</h3>
+                                <h5>2020 - Desafío Latam</h5>
+                                <p>Ejercicio realizado en la carrera de Diseño UX/UI de Desafío Latam, donde se realizaron rediseños a sitios web de radio emisoras nacionales.</p>
+                                <a onclick="open_modal2()">Ver Más</a>
+                            </div>
+                        </div>
+
+                    </div>
+               </div> 
+        </div>
+
+        <div class="proyectos__di content">
+            <div class="">
+                <label for="desplegable2">
+                    <h2 class="content title select-none">Diseño Industrial</h2>
+                    <div class="arrow__container"">
+                        <div class="arrow1"></div>
+                    </div>
+                </label>
+                <input type="checkbox" id="desplegable2">
+                 <div class="proyectos__desplegable2">
+
+                     <div class="proyectos__proyecto proyectos__proyecto--bg3">
+                         <div class="proyectos__descripcion select-none">
+                             <h3>Adario</h3>
+                             <h5>Proyecto Corfo - StartUp Chile</h5>
+                             <p>Es un tablero inteligente que ayuda a los adultos mayores a programar sus actividades diarias.</p>
+                             <a onclick="open_modal3()">Ver Más</a>
+                         </div>
+                     </div>
+
+                     <div class="proyectos__proyecto proyectos__proyecto--bg4">
+                         <div class="proyectos__descripcion select-none">
+                             <h3>Plint</h3>
+                             <h5>Utem - ProteinLab</h5>
+                             <p>Es un macetero inteligente que da a tu planta la capacidad de interactuar, mediante sensores, luz y sonidos, puedes enterarte del nivel de humedad de tu planta y ésta reaccionará a tus cuidados.</p>
+                             <a onclick="open_modal4()">Ver Más</a>
+                         </div>
+                     </div>
+
+                 </div>
+            </div> 
+     </div>
+               
+    </section>
+
+    <section id="educacion" class="educacion">
+        <div class="content">
+            <h2 class="educacion__title">Educación</h2>
+            <div class="container">
+                <div class="row">
+
+                    <div class="educacion__img col-12 col-md-4"></div>
+                    <div class="educacion__text col-12 col-md-8">
+                        <h3>Universidad Tecnológica Metropolitana</h3>
+                        <h4>Diseño Industrial | 2010 - 2016</h4>
+                    </div>
+                    <hr class="col-12">
+
+                    <div class="educacion__img2 col-12 col-md-4"></div>
+                    <div class="educacion__text col-12 col-md-8">
+                        <h3>Desafío Latam</h3>
+                        <h4>Diseño UX/UI | 2019-2020</h4>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+                
+    </section>
+
+    <section id="experiencia" class="experiencia bg">
+        <div class="content">
+            <h2 class="experiencia__title">Experiencia</h2>
+            <div class="container">
+                <div class="row">
+
+                    <div class="experiencia__img d-none-lg col-12 col-md-3"></div>
+                    <div class="experiencia__text col-12 col-md-9">
+                        <h3>ProteinLab</h3>
+                        <h4>Diseñador de productos de innovación social y tecnológica | 2016-2017</h4>
+                        <h5>Encargado del Diseño y prototipado de productos, pasando por la utilización de metodologías de Diseño Industrial, testeos y fabricación digital para prototipos.</h5>
+                    </div>
+                    <div class="experiencia__img d-none d-block-lg col-12 col-md-3"></div>
+                    <hr class="col-12">
+
+                    <div class="experiencia__img2 d-none-lg col-12 col-md-3"></div>
+                    <div class="experiencia__text col-12 col-md-9">
+                        <h3>Adario</h3>
+                        <h4>Cofundador - Diseñador Industrial | 2017-2018</h4>
+                        <h5>Proyecto financiado por Corfo y Start-UP Chile bajo el programa The S Factory Gen7. Encargado del Diseño Industrial, prototipado de productos mediante fabricación digital, Administración, análisis de mercado, pricing y estrategias de venta.</h5>
+                    </div>
+                    <div class="experiencia__img2 d-none d-block-lg col-12 col-md-3"></div>
+                    <hr class="col-12">
+
+                    <div class="experiencia__img3 d-none-lg col-12 col-md-3"></div>
+                    <div class="experiencia__text col-12 col-md-9">
+                        <h3>Universidad Tecnológica Metropolitana</h3>
+                        <h4>Diseñador Industrial | 2019</h4>
+                        <h5>Operador de maquinarias de fabricación digital e instructor en capacitacion de alumnos para el uso de maquinaria de fabricación digital.</h5>
+                    </div>
+                    <div class="experiencia__img3 d-none d-block-lg col-12 col-md-3"></div>
+
+                </div>
+
+            </div>
+        </div>        
+    </section>
+    
+    <div id="curriculum"></div>
+    <section class="conocimientos container">
+        <div class="row">
+
+            <div class="col-12">
+                <h2 class="conocimientos__title">Curriculum</h2>
+                <h4 class="text-center">Si deseas saber más sobre mi, <a href="#contacto">contactame</a> o descarga mi curriculum.</h4>
+                <div class="button">
+                    <button onclick="window.location.href='assets/doc/Curriculum Raúl Higueras.pdf'" type="submit">Descargar</button>
+                </div> 
+                
+                
+            </div>
+
+        </div>              
+    </section>
+    
+    <section id="contacto" class="contactame bg2">
+        <div class="content">
+            <h2 class="contactame__title">Contáctame</h2>
+            <form target="_blank" action="https://formsubmit.co/a4a97edadacab3065ee8a00c9bdfc62e" method="POST" class="">
+                <div class="container form-group">
+                        <div class="row">
+                            <div class="col-3 d-none d-block-lg"></div>
+                            <div class="col-12  col-md-6 form">
+                                <p>Nombre</p>
+                                <input name="name" class="form-control" type="text">
+                                <p>Correo</p>
+                                <input name="email" class="form-control" type="text">
+                                <p>Mensaje</p>
+                                <textarea name="message" class="form-control" type="text"></textarea>
+                                <div class="button">
+                                    <button type="submit">Enviar</button>
+                                </div>
+                            </div>  
+                        </div>
+                </div>
+            </form> 
+        </div>
+              
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="footer__title">Buscame en:</h4>
+                    <div class="footer__RRSS">
+                        <a href="https://www.linkedin.com/in/raulhigueras"><i class="fab fa-linkedin-in footer__img" ></i></a>
+
+                        <a href="https://github.com/raulhc3521"><i class="fab fa-github footer__img"></i></a>
+
+                        <a href="https://www.instagram.com/raulin3521"><i class="fab fa-instagram footer__img"></i></a>                        
+                    </div>
+                    
+                    <p>Página web Desarrollada y Diseñada por Raúl Higueras Caballero, Todos los derechos reservados © | Para notificar errores en la pagina, contactar al correo electrónico ralhc3521@gmail.com o por el mismo formulario de <a href="#contacto">contacto</a> de la página.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </footer>
+
+        <!-- modales -->
+    <div id="box-modal">
+        <button for="close" onclick="close_img_modal()" class="modal__close select-none">X</button>
+        <div id="box-modal-content">
+            <img id="img-modal" src="" alt="">
+        </div>
+    </div>
+
+    <div class="modales">
+        <!-- Gasconnect -->
+        <div class="modal modal-1">
+            <button for="close" onclick="close_modal()" class="modal__close d-none-md select-none">X</button>
+    
+            <div class="modal__conjunto">
+                <div class="modal--overflow modal--overflow1">
+                    <div class="modal__contenido">    
+                        
+                        <div class="descripcion modal-description">
+                            <h2>Gasconnect</h2>
+                            <p class="sub">Proyecto realizado en la carrera de Diseño UX/UI de Desafío Latam</p>
+                            <br>
+                            <img onclick="imgModal(this)" class="img-modal" src="assets/images/modal_gasconnect/gasconnect_modal.jpg" alt="">                
+                            <h5 class="bold">Descripción del proyecto</h5>
+                            <p class="last-line">La empresa Gasco lleva teniendo problemas de usabilidad con su aplicación Gasconnect desde el año 2017, obteniendo muy bajas calificaciones en las diferentes app Store, esto motivó a la empresa a invertir en Diseño UX para su app. </p>
+                            <p class="bold d-inline">Duración del proyecto:</p>
+                            <p class="d-inline">10 días</p>
+                        </div>
+
+                        <div class="descubrimiento modal-section">
+                            <h3><span class="text-turq">Etapa 1 </span>Descubrimiento</h3>
+
+                            <p class="bold">Actividades realizadas:</p>
+                            <ol>
+                                <li>Brief con el cliente</li>
+                                <li>Benchmark</li>
+                                <li>Entrevistas semiestructuradas</li>
+                                <li>Encuestas Online</li>
+                            </ol>
+                            
+                            <p>Mediante la investigación realizada, se detectó que el principal problema en la aplicación era la arquitectura de la información y es en donde más se trabajó sin dejar de lado las otras falencias.</p>
+
+                            <img onclick="imgModal(this)" src="assets/images/modal_gasconnect/Benchmark.jpg" alt="">
+                            <figcaption>Imagen correspondiente al benchmark realizado entre la aplicación Gasconnect y otras apps de delivery de gas y otros.</figcaption>
+
+                            <img onclick="imgModal(this)" src="assets/images/modal_gasconnect/Entrevistas.png" alt="">
+                            <figcaption>Imagen correspondiente a las entrevistas On-line realizadas a 5 usuarios de la app.</figcaption>
+
+                            
+                            
+                        </div>
+
+                        <div class="interpretacion modal-section">
+                            <h3><span class="text-turq">Etapa 2 </span>Interpretación</h3>
+
+                            <p class="bold">Actividades realizadas:</p>
+                            <ol>
+                                <li>User Persona</li>
+                                <li>Value Proposition Canvas</li>
+                            </ol>
+
+                            <p>Las entrevistas en conjunto con el benchmark mostraron como resultado deficiencias en los siguientes aspectos:</p>
+                            <div class="container-fluid">
+                                <div class="row">
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img1"></div>
+                                        <div class="card1-text">
+                                            <p>Arquitectura de la información</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img2"></div>
+                                        <div class="card1-text">
+                                            <p>Comprensión del contenido</p>
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img3"></div>
+                                        <div class="card1-text">
+                                            <p>Realización de pedidos</p>
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img4"></div>
+                                        <div class="card1-text">
+                                            <p>Registro en la app</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <p>Las encuestas on-line arrojaron como resultado los elementos que mas valoran en esta app con el siguiente orden:</p>
+                            <div class="container-fluid">
+                                <div class="row">
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img5"></div>
+                                        <div class="card1-text">
+                                            <p>Seguimiento de los pedidos</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img6"></div>
+                                        <div class="card1-text">
+                                            <p>Descuentos y promociones</p>
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="card1 col-12">
+                                        <div class="card1-img7"></div>
+                                        <div class="card1-text">
+                                            <p>Seguridad en los pagos</p>
+                                        </div>                                        
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <p>Con esta información revelada, se realizó un User persona y una propuesta de valor.</p>
+
+                            <img onclick="imgModal(this)" src="assets/images/modal_gasconnect/value_proposition.png" alt="">
+                            <figcaption>Imagen correspondiente al Value Proposition Canvas realizado posterior a las entrevistas y encuestas on-line.</figcaption>
+                        </div>
+
+                        <div class="ideacion modal-section">
+                            <h3><span class="text-turq">Etapa 3 </span>Ideación</h3>
+
+                            <p class="bold">Actividades realizadas:</p>
+                            <ol>
+                                <li>Sketching</li>
+                                <li>Wireframes</li>
+                                <li>UI Kit</li>
+                            </ol>
+                            <img onclick="imgModal(this)" src="assets/images/modal_gasconnect/gasco_wireframe.jpg" alt="">
+                            <figcaption>Imagen correspondiente a los wireframes iniciales de la sección de registro en la app Gasconnect</figcaption>
+                            <img onclick="imgModal(this)" src="assets/images/modal_gasconnect/WireframeHQ.png" alt="">
+                            <figcaption>Imagen correspondiente a los Wireframes de la app Gasconnect</figcaption>   
+
+                            <p>Acá puedes navegar en el preoyecto:</p>
+
+                            <div class="proto">
+
+                                <iframe style="width: 100%; height: 400px; border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FZq4TZqGl8bMT4mGFbDMkle%2FPrototipo-Gasconnect%3Fnode-id%3D0%253A1&chrome=DOCUMENTATION" allowfullscreen></iframe>
+                                                                
+                                <input type="checkbox" id="proy" style="display: none;">
+                                <label for="proy" class="open_proto">
+                                    <a>Mostrar Proyecto</a>
+                                </label>
+                                <label for="proy" class="close_proto">
+                                    <a>Ocultar Proyecto</a>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                        <div class="prototipado modal-section">
+                            <h3><span class="text-turq">Etapa 4 </span>Prototipado</h3>
+                            <p class="bold">Actividades realizadas:</p>
+                            <ol>
+                                <li>Prototipo de alta fidelidad</li>
+                                <li>Testeo de usabilidad</li>
+                            </ol>
+
+                            <h5 class="bold">Prueba el Prototípo de esta app</h5>
+                            <p>Misión: Estabas cocinando en tu hogar y se te acaba el gas, por lo que deber comprar un cilindro normal de 15kl, un cilindro catalítico de 15kl, aplicar un código de descuento, pagar en efectivo y pedirlo a la dirección "San Diego 310, Santiago"</p>
+
+                            <div class="proto proto-m">
+                                <iframe class="prototype-mobile" style="margin: 30px auto; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 30px; width: 100%; max-width: 320px; height: 90vh; max-height: 628px;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FZq4TZqGl8bMT4mGFbDMkle%2FWireframes-HD%3Fnode-id%3D1%253A2%26viewport%3D710%252C621%252C0.2468518763780594%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
+
+                                <input type="checkbox" id="prot-m" style="display: none;">
+                                <label for="prot-m" class="open_proto" style=" height: 100%;">
+                                    <a>Mostrar Proyecto</a>
+                                </label>
+                                <label for="prot-m" class="close_proto">
+                                    <a>Ocultar Proyecto</a>
+                                </label>
+                            </div>
+                            
+
+                            <div class="proto proto-d">
+                                <iframe class="prototype-desktop" style="width: 100%; height: 750px;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FZq4TZqGl8bMT4mGFbDMkle%2FWireframes-HD%3Fnode-id%3D1%253A2%26viewport%3D710%252C621%252C0.2468518763780594%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
+
+                                <input type="checkbox" id="prot-d" style="display: none;">
+                                <label for="prot-d" class="open_proto" style="height: 750px;">
+                                    <a>Mostrar Proyecto</a>
+                                </label>
+                                <label for="prot-d" class="close_proto">
+                                    <a>Ocultar Proyecto</a>
+                                </label>
+                            </div>
+                                                        
+                        </div>   
+
+                        <div class="resultados modal-section">
+                            <h3>Resultados</h3>
+                            <p>Una vez generado el prototipo testeable, se obtuvo como resultado del testeo una buena aceptación de los clientes quedando como actividades futuras revisar el ícono del carro de compras para que sea más entendible, crear una descripción más correcta para el sistema de cilindros vacíos, mostrar de mejor forma los descuentos realizados al carro de compras y una crear descripción para los cilindros catalíticos.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button for="close" onclick="close_modal()" class="modal__close d-none d-block-md select-none">X</button>
+            </div>        
+        </div>
+        <!-- RadioActiva -->
+        <div class="modal modal-2">
+            <button for="close" onclick="close_modal()" class="modal__close d-none-md select-none">X</button>
+    
+            <div class="modal__conjunto">
+                <div class="modal--overflow modal--overflow2">
+                    <div class="modal__contenido">
+
+                        <div class="descripcion modal-description">
+                            <h2>RadioActiva</h2>
+                            <p class="sub">Proyecto realizado en la carrera de Diseño UX/UI de Desafío Latam</p>
+                            <br>
+                            <img onclick="imgModal(this)" class="img-modal" src="assets/images/modal_radioactiva/mockup_desktop_.jpg" alt="">                
+                            <h5 class="bold">Descripción del proyecto</h5>
+                            <p>El objetivo de este trabajo es evaluar mis capacidades para desenvolverme como Diseñador UI dando propuestas de rediseño para páginas web de radio emisoras nacionales, tomando en cuenta la gran cantidad de información que estas poseen.</p>
+                            <p class="bold d-inline">Duración del proyecto:</p>
+                            <p class="d-inline">3 días</p>
+                        </div>
+
+                        <div class="interpretacion modal-section">
+                            <h3><span class="text-turq">Etapa 1 </span>Interpretación</h3>
+
+                            <p class="bold">Actividades realizadas:</p>
+                            <ol>
+                                <li>User Persona</li>
+                                <li>Value Proposition Canvas</li>
+                            </ol>
+
+                            <p>Analizando la investigación entregada por la empresa, se identificaron los siguientes problemas en su página web:</p>
+                            <div class="container-fluid">
+                                <div class="row">
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img1"></div>
+                                        <div class="card1-text">
+                                            <p>Encontrabilidad del contenido</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img2"></div>
+                                        <div class="card1-text">
+                                            <p>Saturación de contenido</p>
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img3"></div>
+                                        <div class="card1-text">
+                                            <p>Inconsistencias en el Diseño</p>
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img4"></div>
+                                        <div class="card1-text">
+                                            <p>Arquitectura de la información</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ideacion modal-section">
+                            <h3><span class="text-turq">Etapa 2 </span>Ideación</h3>
+
+                            <p class="bold">Actividades realizadas:</p>
+                            <ol>
+                                <li>Sketching</li>
+                                <li>Wireframes</li>
+                                <li>UI Kit</li>
+                            </ol>
+
+                            <p>Se tomaron todos los contenidos existentes en la página y se agruparon en 4 grupos, esto con el objetivo de sintetizar la cantidad de información y jerarquizarla de acuerdo a la importancia de estos contenidos para los usuarios.</p>
+                            <p>Orden de contenido de acuerdo a su importancia para los usuarios:</p>
+                            <ol>
+                                <li>Programación</li>
+                                <li>Sintonía</li>
+                                <li>Podcast</li>
+                                <li>Noticias</li>
+                            </ol>
+                            <p>Se creó un mapa con las frecuencias correspondientes a cada región para poder sintonizar la radio, el cual muestra la frecuencia posicionando el mouse en la región correspondiente en desktop y moviendo el mapa horizontalmente para posicionar la región en el centro en mobile.</p>
+                            <img onclick="imgModal(this)" src="assets/images/modal_radioactiva/ra-mapa.png" alt="">
+                            <figcaption>Imagen correspondiente al sketch del buscador de sintonía de radio</figcaption>
+                            <img onclick="imgModal(this)" src="assets/images/modal_radioactiva/ra-wireframe.jpg" alt="">
+                            <figcaption>Imagen correspondiente a los Wireframes de la pagina de RadioActiva</figcaption>
+                            <p>Acá puedes navegar en el preoyecto:</p>
+
+                            <div class="proto">
+
+                                <iframe style="width: 100%; height: 400px; border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FC3ZWF1mgVljKsZbit9PgVl%2FRadio-Activa-Home-page%3Fnode-id%3D0%253A1&chrome=DOCUMENTATION" allowfullscreen></iframe>
+                                  
+                                <input type="checkbox" id="proyRA" style="display: none;">
+
+                                <label for="proyRA" class="open_proto">
+                                    <a>Mostrar Proyecto</a>
+                                </label>
+                                <label for="proyRA" class="close_proto">
+                                    <a>Ocultar Proyecto</a>
+                                </label>
+                                
+
+                            </div>
+                            
+                        </div>
+
+                        <div class="prototipado modal-section">
+                            <h3><span class="text-turq">Etapa 4 </span>Prototipado</h3>
+                            <p class="bold">Actividades realizadas:</p>
+                            <ol>
+                                <li>Prototipo de alta fidelidad</li>
+                            </ol>
+                            <h5 class="bold">Prueba el Prototípo</h5>
+                            <p>Acá puedes ver una captura de la pagina en modo desktop</p>
+                            <img onclick="imgModal(this)" src="assets/images/modal_radioactiva/radio_activa.jpg" alt="">
+                        </div>
+
+                        <div class="resultados modal-section">
+                            <h3>Resultados</h3>
+                            <p>Se logró sintetizar y reorganizar todo el contenido, dejándolo en sus categorías correspondientes, priorizando los reales intereses de los usuarios al momento de ingresar a la página.</p>
+                        </div>
+    
+                    </div>
+                </div>
+                <button for="close" onclick="close_modal()" class="modal__close d-none d-block-md select-none">X</button>
+            </div>        
+        </div>
+        <!-- adario -->
+        <div class="modal modal-3">
+            <button for="close" onclick="close_modal()" class="modal__close d-none-md select-none">X</button>
+    
+            <div class="modal__conjunto">
+                <div class="modal--overflow modal--overflow3">
+                    <div class="modal__contenido">    
+                        
+                        <div class="descripcion modal-description modal-section">
+                            <h2>adario</h2>
+                            <p class="sub">Tablero inteligente que ayuda a los adultos mayores a programar sus actividades diarias, proyecto financiado por Corfo y StartUp Chile.</p>
+                            <br>
+
+                            <img onclick="imgModal(this)" src="assets/images/modal_adario/flyer_español.jpg" alt="">
+                            <figcaption>Imagen correspondiente a los volantes entregados a los asistentes del evento Pitch Finale organizado por StartUp Chile.</figcaption>
+
+                            <h3>Presentación Final StartUp Chile</h3>
+                            <iframe style="border-radius: 15px;" src="https://docs.google.com/viewer?srcid=1ODySqSTKTR57keIsHsdnFzm3byhDiya2&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="680px"></iframe>
+                            <!--<h3>Presentación sobre el funcionamiento del prototipo</h3>
+                            <iframe style="border-radius: 15px;" src="https://docs.google.com/viewer?srcid=1sOUwSunhNhDylgL1AVk-lrTwwrg-Jknq&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="680px"></iframe>-->
+                        </div>
+                    </div>
+                </div>
+                <button for="close" onclick="close_modal()" class="modal__close d-none d-block-md select-none">X</button>
+            </div>        
+        </div>
+        <!-- Plint -->
+        <div class="modal modal-4">
+            <button for="close" onclick="close_modal()" class="modal__close d-none-md select-none">X</button>
+    
+            <div class="modal__conjunto">
+                <div class="modal--overflow modal--overflow4">
+                    <div class="modal__contenido">    
+                        
+                        <div class="descripcion modal-description">
+                            <h2>Plint</h2>
+                            <p class="sub">Planta Inteligente e Interactiva - Proyecto de titulo de la carrera Diseño Industrial de la Universdad Tecnológica Metropolitana</p>
+                            <br>
+                            <iframe style="border-radius: 15px;" src="https://docs.google.com/viewer?srcid=0B-tgiZ_qPHvwQzkyc0Q4WDM3NXM&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="680px"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <button for="close" onclick="close_modal()" class="modal__close d-none d-block-md select-none">X</button>
+            </div>        
+        </div>
+    </div>    
+        <!-- fin Modales -->
+
+    <!-- Script propio -->
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>

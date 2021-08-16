@@ -1,0 +1,28 @@
+//abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+//base
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/keyframes';
+@import 'base/breakpoints';
+@import 'base/grid';
+
+//components
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/scrollbar';
+
+//layout
+@import 'layout/nav';
+@import 'layout/header';
+@import 'layout/body';
+@import 'layout/footer';
+@import 'layout/modal';
+@import 'layout/proyectos';
+@import 'layout/educacion';
+@import 'layout/experiencia';
+@import 'layout/conocimientos';
+@import 'layout/contactame';

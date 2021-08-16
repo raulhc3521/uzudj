@@ -1,0 +1,35 @@
+.experiencia {
+    padding: 150px 0 150px;
+    &__text {
+        text-align: center;
+        
+        &:last-of-type {
+            margin-bottom: 0px;
+        }
+    }
+
+    .experiencia__img {
+        background-image: url(../images/Proteinlab.svg);
+    }
+    .experiencia__img2 {
+        background-image: url(../images/adario.png);
+    }
+    .experiencia__img3 {
+        background-image: url(../images/utem.png);
+    }
+    .experiencia__img, .experiencia__img2, .experiencia__img3 {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 70px;
+        max-height: 100%;
+    }
+
+    @media only screen and (min-width: 992px) {
+        .experiencia__text {
+            padding-right: 50px;
+            text-align: left;
+        }
+    }
+}

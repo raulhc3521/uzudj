@@ -1,0 +1,41 @@
+.educacion {
+    .content {
+        margin: 150px auto;
+    }
+
+    .educacion__text {
+        text-align: center;
+    }
+
+    .educacion__img {
+        background-image: url(../images/utem.png);
+    }
+    .educacion__img2 {
+        background-image: url(../images/desafio_latam.png);
+    }
+    .educacion__img, .educacion__img2 {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 70px;
+        max-height: 100%;
+    }
+    @media only screen and (min-width: 992px) {
+        .educacion__text {
+            text-align: left;
+            padding-left: 50px;
+            margin: 0px;
+                    
+            &:last-of-type {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .educacion__img, .educacion__img2 {
+            height: 100%;
+        }
+        
+    }
+}

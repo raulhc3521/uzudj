@@ -1,0 +1,31 @@
+.educacion__title, .experiencia__title, .proyectos__title, .conocimientos__title, .contactame__title, .footer__title {
+    text-align: center;
+    font-weight: 700;
+    color: $dark;
+    padding-bottom: 80px;
+}
+
+hr {
+    border-bottom: 1px solid $gray;
+    width: 100%;
+}
+
+.bg {
+    background-color: $gray;
+    transform: skewY(2deg);
+    .content {
+        transform: skewY(-2deg);
+    }
+}
+
+.bg2 {
+    background-color: $gray;
+    transform: skewY(-2deg);
+    .content {
+        transform: skewY(2deg);
+    }
+}
+
+.bg, .bg2 {
+    padding: 80px 0 200px;
+}

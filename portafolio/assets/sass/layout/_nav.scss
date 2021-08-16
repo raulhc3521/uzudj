@@ -1,0 +1,118 @@
+//navbar
+
+.navbar {
+    background-color: $dark;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    transition: all .3s ease-in-out;
+    padding: 4px 0 12px;
+
+    .row {
+        grid-row-gap: 10px;
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar__text-title-desplegable {
+        text-align: left;
+        color: $turquoise;
+        padding: 10px 0 0 5%;
+        display: inline-block;
+        transition: all .3s ease-in-out;
+    } 
+    .burger {
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        top: 7px;
+        right: 5%;
+        color: $turquoise;
+        transition: all .3s ease-in-out;
+        
+        h4 {
+            transform: rotate(90deg);
+        }
+    }      
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar {
+        background-color: $white;
+    }    
+}
+
+.desplegable_nav {
+    height: 0px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    color: $white;
+}
+
+#nav__desplegable {
+    display: none;
+    width: 100%;
+    transition: all .3s ease-in-out;
+
+    &:checked ~ .desplegable_nav {
+        height: 300px;
+        transition: all .3s ease-in-out;      
+    }
+}
+
+
+.navbar__text-title--active {
+    text-decoration: none;
+    position: relative;
+    font-size: $h4-size;
+    width: 400px;
+    left: -60px;
+    top: 10px;
+    color: $turquoise;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color: $turquoise;
+    }
+}
+
+.navbar__text--inactive {
+    text-decoration: none;
+    padding-top: 10px;
+    font-size: $h5-size;
+    color: $white;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color: $turquoise;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar__text--inactive {
+        color: $dark;
+    }
+}
+
+.nav_scroll {
+    background-color: $dark;
+    transition: all .2s ease-in-out;
+    
+    .navbar__text--inactive {
+        color: $white !important;
+        &:hover {
+            color: $turquoise !important;
+        }
+    }
+
+    .navbar__text-title--active {
+        left: 0;
+        top: 10px;
+        font-size: $h5-size;
+        color: $white !important;
+        &:hover {
+            color: $turquoise !important;
+        }
+        
+    }
+}
